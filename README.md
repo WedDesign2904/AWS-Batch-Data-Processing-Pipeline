@@ -64,4 +64,4 @@ Workshops
 
   IAM (Identity and Access Management) is used to manage permissions securely. It controls which users and services can access the S3 buckets, run Glue jobs, query with Athena, or view dashboards in QuickSight —    keeping your data safe and access well-organized.
 
-  (https://chatgpt.com/s/m_68cbf63c93a48191b97097f7f3c6c589)
+
