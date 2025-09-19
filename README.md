@@ -64,4 +64,8 @@ Workshops
 
   IAM (Identity and Access Management) is used to manage permissions securely. It controls which users and services can access the S3 buckets, run Glue jobs, query with Athena, or view dashboards in QuickSight —    keeping your data safe and access well-organized.
 
+🛡️ License
+This project is licensed under the MIT License. You are free to use, modify, and share this project with proper attribution.
 
+🌟 About Me
+Hi there! I'm Anandh, also known as WebDesign2904. I'm fully related to the AWS and  Data Engineering Concept. I’m making working with data enjoyable and engaging!
