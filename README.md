@@ -1,7 +1,7 @@
 # AWS-Batch-Data-Processing-Pipeline
 Stores raw data in S3, uses Glue for ETL and schema cataloging, Athena for SQL queries, QuickSight for dashboards, and CloudWatch for monitoring and alerting, enabling scalable, cost-effective batch analytics.
 
-AWS Service for Connecting **Architecture Diagram:**
+AWS Service for Connecting ![**Architecture Diagram:**](https://github.com/WedDesign2904/AWS-Batch-Data-Processing-Pipeline/blob/main/AWS%20Batch%20Processing%20Pipeline%20Architecture.png)
 
 ## Visual Workflow: 
 
