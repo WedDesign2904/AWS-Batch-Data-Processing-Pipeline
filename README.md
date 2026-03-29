@@ -3,7 +3,7 @@ Stores raw data in S3, uses Glue for ETL and schema cataloging, Athena for SQL q
 
 AWS Service for Connecting **Architecture Diagram** 
 
-![Architecture Diagram](https://github.com/WedDesign2904/AWS-Batch-Data-Processing-Pipeline/raw/main/AWS%20Batch%20Processing%20Pipeline%20Architecture.png)  
+![Architecture Diagram]()  
 
 
 ## Visual Workflow: 
