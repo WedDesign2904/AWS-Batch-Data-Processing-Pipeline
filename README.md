@@ -30,16 +30,16 @@ Getting Started
 
 2️⃣ Step-by-Step Explanation
 
-**Stage 1 — S3 (Storage & Ingestion)**
+**Stage 1 — S3 (Storage & Ingestion)** — 
 Raw files (CSV, JSON, Parquet, ORC) land in S3. The key practice here is partitioning your data by a date hierarchy (year=/month=/day=) so that downstream queries scan only the slices they need, dramatically cutting costs. S3 also stores intermediate processed data and final Athena query results.
 
-**Stage 2 — Glue Crawler + Data Catalog**
+**Stage 2 — Glue Crawler + Data Catalog** — 
 The Glue Crawler scans your S3 prefixes, infers schemas, and populates the Glue Data Catalog — essentially a managed Hive Metastore. You schedule crawlers on a recurring basis so new partitions are discovered automatically. Glue ETL jobs (PySpark under the hood) handle transformations: deduplication, type casting, and converting raw files into compressed Parquet for fast columnar reads.
 
-**Stage 3 — Amazon Athena**
+**Stage 3 — Amazon Athena** — 
 Athena uses the Data Catalog as its schema source and queries data directly in S3 via a managed Presto engine — fully serverless, no cluster to spin up. You pay per TB of data scanned, so partitioning + Parquet compression is the primary cost lever. Results are written back to a designated S3 output bucket and are immediately reusable.
 
-**Stage 4 — QuickSight (BI & Visualization)**
+**Stage 4 — QuickSight (BI & Visualization)** — 
 QuickSight connects to Athena as a data source. Its in-memory SPICE engine caches datasets for sub-second dashboard performance without re-running Athena queries on every page load. You can schedule SPICE refreshes nightly to align with your batch cadence.
 
 **Supporting layers across all stages:**
